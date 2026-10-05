@@ -1,0 +1,89 @@
+<!--Esta es la parte para agendar una cita desde el lado del usuario-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NowToday - Agenda Usuario</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="inicio-usuario.html">Inicio</a></li>
+                <li><a href="catalogo-usuario.html">Catálogo</a></li>
+                <li><a href="reservas-usuario.html">Reservas</a></li>
+                <li><a href="agenda-usuario.html">Agenda</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Aquí tendremos que jalar el servicio según lo que haya dado click el usuario-->
+        <h1>Nombre Servicio</h1>
+        <section class="img-servicio">
+            <img src="imagen1.png">
+        </section>
+
+        <section class="detalles-servicio">
+            <h2>Detalles del Tratamiento</h2>
+            <h4>Costo: $-</h4>
+            <!--
+                Aquí también debería haber una condicional que dependiendo de atributos del servicio (si incluye propinas,
+                si incluye impuestos) se muestren las letras pequeñas.
+            -->
+            <small>IVA incluido. No contempla propinas.</small>
+            <h4>Duración: -</h4>
+            <small>La sesión se puede extender hasta <strong>15</strong> minutos.</small>
+        </section>
+
+        <section class="descripcion-servicio">
+            <h3>Descripción</h3>
+            <p>~Desrcipción que deberá salir de la info del servicio~</p>
+
+            <h3>Beneficios</h3>
+            <ul>
+                <li>Beneficio 1</li>
+                <li>Beneficio 2</li>
+                <li>Beneficio 3</li>
+                <li>Beneficio 4</li>
+                <li>Beneficio 5</li>
+            </ul>
+            <img src="imagen3.png">
+        </section>
+
+        <section class="calendario-agendar">
+            <input type="date"> <!--Calendario por mientras-->
+            <!--Aquí se deberían crear botones con horas disponibles según el servicio y sus horarios libres-->
+        </section>
+
+        <section class="banner">
+            <p>Agenda tu cita hoy.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-pie">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <div class="redes">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Red Social 1</a></li>
+                <li><a href="#">Red Social 2</a></li>
+                <li><a href="#">Red Social 3</a></li>
+                <li><a href="#">Red Social 4</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

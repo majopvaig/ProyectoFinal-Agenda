@@ -1,0 +1,96 @@
+<!--Este es el inicio desde el lado del usuario/cliente-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Today - Inicio Usuario</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="inicio-usuario.html">Inicio</a></li>
+                <li><a href="catalogo-usuario.html">Catálogo</a></li>
+                <li><a href="reservas-usuario.html">Reservas</a></li>
+                <li><a href="agenda-usuario.html">Agenda</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu pausa te espera.</h1>
+                <p>En NowToday Spa, el descanso que te mereces está a tu alcance.</p>
+                <!--Esta 'a' vendría siendo un botón, pero ahorita solo me estoy ocupando de la estructura-->
+                <a href="catalogo-usuario.html">Explorar Servicios</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="imagen-del-spa.png">
+            </div>
+        </section>
+
+        <section class="entrada-catalogo">
+            <h2>Desconecta del estrés y regálate el descanso que mereces.</h2>
+            <!--Este también vendría siendo un botón, pero después le agrego esas especificaciones :b-->
+            <a href="catalogo-usuario.html">Ver Catálogo Completo</a>
+        </section>
+
+        <hr>
+
+        <section class="servicios-populares">
+            <!--
+                Aquí yo creo que sería una lista y se itera, la lista se obtendría de un método que regresará los tres servicios
+                más populares.
+            -->
+            <h2>Servicios Populares</h2>
+            <div class="grid-servicio">
+
+                <article class="card-servicio">
+                    <img src="imagen1.png">
+                    <h3>Masaje Facial</h3>
+                </article>
+
+                <article class="card-servicio">
+                    <img src="imagen2.png">
+                    <h3>Masaje Sueco</h3>
+                </article>
+
+                <article class="card-servicio">
+                    <img src="imagen3.png">
+                    <h3>Agua Termal</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="banner">
+            <p>Agenda tu cita hoy.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-pie">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <div class="redes">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Red Social 1</a></li>
+                <li><a href="#">Red Social 2</a></li>
+                <li><a href="#">Red Social 3</a></li>
+                <li><a href="#">Red Social 4</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
