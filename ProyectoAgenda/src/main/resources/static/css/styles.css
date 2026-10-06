@@ -37,7 +37,6 @@ main {
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
-    height: 69px;
     position: relative;
     box-sizing: border-box;
 }
@@ -57,12 +56,15 @@ main {
 nav ul {
     display: flex;
     gap: 30px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
+    align-items: center;
+
 }
 
 nav a {
-    padding-bottom: 5px;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
 }
 
@@ -193,6 +195,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border:  1px solid #CDCDCD;
 }
 
 .card-servicio img {
