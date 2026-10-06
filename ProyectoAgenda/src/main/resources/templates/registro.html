@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Now Today - Registro</title>
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <!--No me cargan las imágenes :()-->
+    <a href="/static/imgs/entrada-spa.png">Now<span>Today</span></a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="inicio-usuario.html">Inicio</a></li>
+      <li><a href="catalogo-usuario.html">Catálogo</a></li>
+      <li><a href="inicio-sesion.html">Inicio sesión</a></li>
+      <li><a href="registro.html">Registrate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="registro-main">
+  <div class="registro-container">
+
+    <h1 class="registro-titulo">Crear cuenta</h1>
+    <hr class="registro-divider">
+  </div>
+  <section class="registro-card">
+    <form action="/registro" method="post">
+      <div class="campo">
+        <h3>Nombre:</h3>
+        <input
+                type=""
+                id="nombre"
+                name="nombre"
+                required
+        >
+      </div>
+      <div class="campo">
+        <h3>Correo:</h3>
+        <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+        >
+      </div>
+      <div class="campo">
+        <h3>Contraseña:</h3>
+        <input
+                type="password"
+                id="contrasenia"
+                name="contrasenia"
+                required
+        >
+      </div>
+      <div class="campo">
+        <h3>Contraseña confirmada:</h3>
+        <input
+                type="password"
+                id="contrasenia-confir"
+                name="contrasenia-confir"
+                required
+        >
+      </div>
+      <button type="submit">Registrarme</button>
+    </form>
+    <p>
+      <a href="inicio-sesion.html">Ya tengo cuenta / Iniciar sesion</a>
+    </p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <title>Now Today - Inicio sesion</title>
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <!--No me cargan las imágenes :()-->
+    <a href="/static/imgs/entrada-spa.png">Now<span>Today</span></a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="inicio-usuario.html">Inicio</a></li>
+      <li><a href="catalogo-usuario.html">Catálogo</a></li>
+      <li><a href="inicio-sesion.html">Inicio sesión</a></li>
+      <li><a href="registro.html">Registrate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="inicio-sesion-main">
+  <div class="inicio-sesion-container">
+
+    <h1 class="inicio-sesion-titulo">Inicio sesión</h1>
+    <hr class="inicio-sesion-divider">
+  </div>
+  <section class="login-card">
+    <form action="/inicio-sesion" method="post">
+      <div class="campo">
+        <h3>Correo:</h3>
+        <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+        >
+      </div>
+      <div class="campo">
+        <h3>Contraseña:</h3>
+        <input
+                type="password"
+                id="contrasenia"
+                name="contrasenia"
+                required
+        >
+      </div>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p>
+      <a href="registro.html">No tengo cuenta / Registrarse</a>
+    </p>
+  </section>
+
+</main>
+</body>
+</html>
