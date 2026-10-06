@@ -162,8 +162,11 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-.entrada-catalogo a {
-    display: inline-block;
+
+
+.btn-principal {
+    display: block;
+    margin: 0 auto 40px auto;
     background-color: #e3e835;
     color: #333;
     padding: 15px 40px;
@@ -172,6 +175,8 @@ nav a:hover {
     max-width: 500px;
     font-size: 14px;
     border: 1px solid #d1d62c;
+    text-align: center;
+    cursor: pointer;
 }
 
 hr {
