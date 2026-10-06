@@ -5,29 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
     <title>NowToday - Catálogo Usuario</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="#">Now<span>Today</span></a>
-        </div>
+<header class="header">
 
-        <nav>
-            <ul>
-                <li><a href="inicio-usuario.html">Inicio</a></li>
-                <li><a href="catalogo-usuario.html">Catálogo</a></li>
-                <li><a href="reservas-usuario.html">Reservas</a></li>
-                <li><a href="agenda-usuario.html">Agenda</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="logo">
+        <a href="inicio-usuario.html">Now<span>Today</span></a>
+    </div>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul>
+            <li><a href="inicio-usuario.html">Inicio</a></li>
+            <li><a href="catalogo-usuario.html">Catálogo</a></li>
+            <li><a href="reservas-usuario.html">Reservas</a></li>
+            <li><a href="agenda-usuario.html">Agenda</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+
+</header>
 
     <main>
-        <h1>Catálogo</h2>
+        <h1>Catálogo</h1>
+        <hr>
         <!--Categoría 1-->
         <section class="categoria-servicio">
             <!--
