@@ -182,7 +182,7 @@ nav a:hover {
 hr {
     border: none;
     border-top: 1px solid #eaeaea;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -303,32 +303,6 @@ main > h1 {
     background-color: #1e877c;
 }
 
-
-@media (min-width: 768px) {
-    main:has(.img-servicio) {
-        display: grid;
-        grid-template-columns: 1fr 380px;
-        gap: 30px;
-        grid-template-areas:
-            "titulo titulo"
-            "imagen detalles"
-            "desc calendario"
-            "banner banner";
-        align-items: start;
-    }
-    
-    main:has(.img-servicio) > h1 {
-        grid-area: titulo;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    
-    .img-servicio { grid-area: imagen; }
-    .detalles-servicio { grid-area: detalles; }
-    .descripcion-servicio { grid-area: desc; }
-    .calendario-agendar { grid-area: calendario; }
-    main:has(.img-servicio) > .banner { grid-area: banner; }
-}
 
 .img-servicio img {
     width: 100%;
@@ -513,6 +487,254 @@ footer {
     transition: all 0.3s ease;
 }
 
+/* --- Editar Servicio Admin --- */
+/* --- Sección Superior --- */
+.editar-servicio-header {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.editar-img-col img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-cambiar-img {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.editar-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-editable-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.campo-editable-header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+}
+
+.campo-editable-desc {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.campo-editable-desc p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.campo-editable-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.campo-editable-inline strong {
+    font-weight: 700;
+    width: 90px;
+    color: #000;
+}
+
+.icon-edit {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* solo afecta a la imagen principal del servicio */
+.editar-img-col > img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-cambiar-img img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* --- Seccion inferior --- */
+.editar-horarios-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 180px;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.col-horario h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Calendario */
+.calendar-card {
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #FFF;
+    margin-bottom: 25px;
+    max-width: 280px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.calendar-header select {
+    padding: 3px 8px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calendar-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.calendar-table th {
+    color: #888;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+.calendar-table td {
+    padding: 6px 0;
+    color: #333;
+}
+
+/* Dias seleccionados */
+.calendar-table .selected-black {
+    background-color: #1A1A1A;
+    color: #FFF;
+    border-radius: 6px;
+}
+
+.calendar-table .selected-red {
+    background-color: #C01212;
+    color: #FFF;
+    border-radius: 6px;
+}
+
+/* Inputs de horarios */
+.form-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 280px;
+}
+
+.input-pill-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-pill-group label {
+    width: 65px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+
+.pill-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.pill-wrapper input {
+    width: 100%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+/* Botones de guardar y cancelar */
+.col-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-self: end;
+}
+
+.btn-guardar {
+    background-color: #638BC8;
+    color: #FFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-cancelar {
+    background-color: #C01212;
+    color: #FFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .header {
         padding: 15px 20px;
@@ -577,6 +799,45 @@ footer {
         float: none;
         width: 100%;
         margin-left: 0;
+        margin-top: 20px;
+    }
+
+    main:has(.img-servicio) {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 30px;
+        grid-template-areas:
+            "titulo titulo"
+            "imagen detalles"
+            "desc calendario"
+            "banner banner";
+        align-items: start;
+    }
+
+    main:has(.img-servicio) > h1 {
+        grid-area: titulo;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .img-servicio { grid-area: imagen; }
+    .detalles-servicio { grid-area: detalles; }
+    .descripcion-servicio { grid-area: desc; }
+    .calendario-agendar { grid-area: calendario; }
+    main:has(.img-servicio) > .banner { grid-area: banner; }
+
+    .editar-servicio-header {
+        grid-template-columns: 1fr;
+    }
+
+    .editar-horarios-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .col-acciones {
+        width: 100%;
+        max-width: 280px;
         margin-top: 20px;
     }
 }
