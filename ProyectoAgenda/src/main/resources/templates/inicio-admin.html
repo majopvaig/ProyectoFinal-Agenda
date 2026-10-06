@@ -10,100 +10,98 @@
 </head>
 
 <body>
-<header class="header">
+  <header class="header">
 
-  <div class="logo">
-    <a href="inicio-admin.html">Now<span>Today</span></a>
-  </div>
-
-  <nav>
-    <input type="checkbox" id="menu-toggle">
-
-    <label for="menu-toggle" class="menu-button">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <ul>
-      <li><a href="">Inicio</a></li>
-      <li><a href="">Catálogo</a></li>
-      <li><a href="">Agenda</a></li>
-      <li><a href="">Agregar Servicio</a></li>
-      <li><a href="">Reservaciones</a></li>
-      <li><a href="">Métricas</a></li>
-      <li><a href="perfil-admin.html">Perfil</a></li>
-    </ul>
-  </nav>
-
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Tu pausa te espera.</h1>
-      <p>En NowToday Spa, el descanso que te mereces está a tu alcance.</p>
-      <!--Esta 'a' vendría siendo un botón, pero ahorita solo me estoy ocupando de la estructura-->
-      <a href="catalogo-usuario.html">Ver Catálogo</a>
+    <div class="logo">
+      <a href="inicio-admin.html">Now<span>Today</span></a>
     </div>
-    <div class="hero-imagen">
-      <img src="../static/imgs/entrada-spa.png" alt="Imagen principal del Spa">
+
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+
+      <label for="menu-toggle" class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul>
+        <li><a href="inicio-admin.html">Inicio</a></li>
+        <li><a href="catalogo-admin.html">Catálogo</a></li>
+        <li><a href="consultar-agenda-admin.html">Agenda</a></li>
+        <li><a href="crear-servicio-admin.html">Agregar Servicio</a></li>
+        <li><a href="metricas-admin.html">Métricas</a></li>
+        <li><a href="perfil-admin.html">Perfil</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Tu pausa te espera.</h1>
+        <p>En NowToday Spa, el descanso que te mereces está a tu alcance.</p>
+        <!--Esta 'a' vendría siendo un botón, pero ahorita solo me estoy ocupando de la estructura-->
+        <a href="catalogo-admin.html">Ver Catálogo</a>
+      </div>
+      <div class="hero-imagen">
+        <img src="../static/imgs/entrada-spa.png" alt="Imagen principal del Spa">
+      </div>
+    </section>
+
+    <section class="entrada-catalogo">
+      <h2>Desconecta del estrés y regálate el descanso que mereces.</h2>
+      <!--Este también vendría siendo un botón, pero después le agrego esas especificaciones :b-->
+      <a class="btn-principal" href="crear-servicio-admin.html">Crear Servicio</a>
+    </section>
+
+    <hr>
+
+    <section class="servicios-populares">
+      <!--
+          Aquí yo creo que sería una lista y se itera, la lista se obtendría de un método que regresará los tres servicios
+          más populares.
+      -->
+      <h2>Servicios Populares</h2>
+      <div class="grid-servicio">
+
+        <article class="card-servicio">
+          <img src="../static/imgs/masaje-facial.png" alt="Imagen de Masaje Facial">
+          <h3>Masaje Facial</h3>
+        </article>
+
+        <article class="card-servicio">
+          <img src="../static/imgs/masaje-sueco.png" alt="Imagen de Masaje Sueco">
+          <h3>Masaje Sueco</h3>
+        </article>
+
+        <article class="card-servicio">
+          <img src="../static/imgs/agua-termal.png" alt="Imagen de Agua Termal">
+          <h3>Agua Termal</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner">
+      <p>Agenda tu cita hoy.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo-pie">
+      <a href="#">Now<span>Today</span></a>
     </div>
-  </section>
 
-  <section class="entrada-catalogo">
-    <h2>Desconecta del estrés y regálate el descanso que mereces.</h2>
-    <!--Este también vendría siendo un botón, pero después le agrego esas especificaciones :b-->
-    <a class="btn-principal" href="">Crear Servicio</a>
-  </section>
-
-  <hr>
-
-  <section class="servicios-populares">
-    <!--
-        Aquí yo creo que sería una lista y se itera, la lista se obtendría de un método que regresará los tres servicios
-        más populares.
-    -->
-    <h2>Servicios Populares</h2>
-    <div class="grid-servicio">
-
-      <article class="card-servicio">
-        <img src="../static/imgs/masaje-facial.png" alt="Imagen de Masaje Facial">
-        <h3>Masaje Facial</h3>
-      </article>
-
-      <article class="card-servicio">
-        <img src="../static/imgs/masaje-sueco.png" alt="Imagen de Masaje Sueco">
-        <h3>Masaje Sueco</h3>
-      </article>
-
-      <article class="card-servicio">
-        <img src="../static/imgs/agua-termal.png" alt="Imagen de Agua Termal">
-        <h3>Agua Termal</h3>
-      </article>
+    <div class="redes">
+      <h4>Redes Sociales</h4>
+      <ul>
+        <li><a href="#">Red Social 1</a></li>
+        <li><a href="#">Red Social 2</a></li>
+        <li><a href="#">Red Social 3</a></li>
+        <li><a href="#">Red Social 4</a></li>
+      </ul>
     </div>
-  </section>
-
-  <section class="banner">
-    <p>Agenda tu cita hoy.</p>
-  </section>
-</main>
-
-<footer>
-  <div class="logo-pie">
-    <a href="#">Now<span>Today</span></a>
-  </div>
-
-  <div class="redes">
-    <h4>Redes Sociales</h4>
-    <ul>
-      <li><a href="#">Red Social 1</a></li>
-      <li><a href="#">Red Social 2</a></li>
-      <li><a href="#">Red Social 3</a></li>
-      <li><a href="#">Red Social 4</a></li>
-    </ul>
-  </div>
-</footer>
+  </footer>
 </body>
-
 </html>
