@@ -1190,3 +1190,83 @@ main > h2 {
     }
 
 }
+
+
+/* ==========================================
+   ESTILOS PARA PANTALLA: INICIAR SESIÓN
+   ========================================== */
+
+.auth-card {
+    background-color: #f0f0f0;
+    max-width: 500px;
+    margin: 40px auto 60px auto;
+    padding: 45px 50px;
+    border-radius: 12px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 25px;
+}
+
+.auth-form label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.auth-form input:focus {
+    border-color: #d1d62c;
+}
+
+.btn-ingresar {
+    display: block;
+    margin: 35px auto 25px auto;
+    background-color: #e3e835;
+    color: #333;
+    border: 1px solid #b8bc23;
+    border-radius: 10px;
+    padding: 12px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: #d6db2f;
+}
+
+.auth-link {
+    text-align: center;
+}
+
+.auth-link a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: underline;
+}
+
+/* Adaptación Móvil */
+@media (max-width: 768px) {
+    .auth-card {
+        padding: 30px 20px;
+        margin: 20px auto 40px auto;
+    }
+}
