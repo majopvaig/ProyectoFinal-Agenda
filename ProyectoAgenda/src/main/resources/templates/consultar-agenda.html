@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+    <body>
+
+        <header class="header">
+            <div class="logo">
+                <a href=".../static/imgs/entrada-spa.png">Now<span>Today</span></a>
+            </div>
+
+            <nav>
+                <!-- Cambiar al header pertinente o con el componente web-->
+                <ul>
+                    <li><a href="inicio-usuario.html">Inicio</a></li>
+                    <li><a href="catalogo-usuario.html">Catálogo</a></li>
+                    <li><a href="reservas-usuario.html">Reservas</a></li>
+                    <li><a href="agenda-usuario.html">Agenda</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="agenda-main">
+            <div class="agenda-container">
+
+                <h1 class="agenda-titulo">Agenda</h1>
+                <hr class="agenda-divider">
+
+                <!-- Filtros y controles -->
+                <div class="agenda-controles">
+                    <div class="filtros-superiores">
+                        <div class="control-grupo">
+                            <label for="categoria">Categoría</label>
+                            <select id="categoria">
+                                <option>Terapia Corporal</option>
+                            </select>
+                        </div>
+                        <div class="control-grupo">
+                            <label for="nombre-servicio">Nombre servicio</label>
+                            <select id="nombre-servicio">
+                                <option>Masaje Sueco</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filtros-inferiores">
+                        <div class="vistas-fecha">
+                            <span class="vista-activa">Día</span>
+                            <span class="separador">/</span>
+                            <span class="vista-inactiva">Semana</span>
+                        </div>
+                        <div class="fecha-selector">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>02/10/2026</span>
+                        </div>
+                        <button class="btn-reservar">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Lista de agendas -->
+                <div class="agenda-lista">
+
+                    <!-- Masaje sueco -->
+                    <div class="agenda-grupo">
+                        <h3 class="grupo-titulo">Masaje Sueco (Terapia Corporal) - 02/18/2026</h3>
+                        <div class="agenda-item">
+                            <span class="item-hora">7:00 am a 9:00 am</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">Completada</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                        <div class="agenda-item">
+                            <span class="item-hora">7:00 am a 9:00 am</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">Confirmada</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                    </div>
+
+                    <!-- Geotermal -->
+                    <div class="agenda-grupo">
+                        <h3 class="grupo-titulo">Geotermal (Terapia Corporal) - 02/18/2026</h3>
+                        <div class="agenda-item">
+                            <span class="item-hora">7:00 am a 9:00 am</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">Cancelada</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                        <div class="agenda-item">
+                            <span class="item-hora">7:00 am a 9:00 am</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">Confirmada</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                    </div>
+
+                    <!-- Aroma terapia -->
+                    <div class="agenda-grupo">
+                        <h3 class="grupo-titulo">Aroma terapia (Terapia Corporal) - 02/18/2026</h3>
+                        <div class="agenda-item">
+                            <span class="item-hora">3:00 pm a 6:00 pm</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">En espera</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                        <div class="agenda-item">
+                            <span class="item-hora">6:00 pm a 8:00 pm</span>
+                            <span class="item-cliente">Martha García</span>
+                            <span class="item-id">112233445566</span>
+                            <span class="item-estado">En espera</span>
+                            <span class="item-opciones">⋮</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
