@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Now Today - Inicio Usuario</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <a href="inicio-usuario.html">Now<span>Today</span></a>
+        </div>
+
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul>
+                <li><a href="inicio-usuario.html">Inicio</a></li>
+                <li><a href="catalogo-usuario.html">Catálogo</a></li>
+                <li><a href="reservaciones-usuario.html">Mis Reservaciones</a></li>
+                <li><a href="agenda-usuario.html">Agenda</a></li>
+                <li><a href="perfil-usuario.html">Perfil</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Mis Reservaciones</h1>
+        <hr>
+
+        <!-- Barra de Búsqueda y Filtros -->
+        <section class="filtro-reservas">
+            <label for="select-filtro">Buscar por:</label>
+
+            <select id="select-filtro" class="select-buscar">
+                <option value="">Selecciona una opción</option>
+                <option value="fecha">Fecha</option>
+                <option value="servicio">Servicio</option>
+                <option value="estado">Estado</option>
+            </select>
+
+            <input type="text" class="input-buscar" placeholder="Primero selecciona una opción">
+        </section>
+
+        <!-- Card de Reservación Activa -->
+        <section class="contenedor-reservaciones">
+            <article class="card-reservacion">
+                <div class="card-reservacion-img">
+                    <img src="../static/imgs/entrada-spa.png" alt="Masaje Facial">
+                </div>
+
+                <div class="card-reservacion-info">
+                    <h3>Masaje Facial</h3>
+
+                    <div class="info-fila">
+                        <span class="label">Fecha y hora:</span>
+                        <span class="valor">30 Sep - 9:30 a.m.</span>
+                    </div>
+
+                    <div class="info-fila">
+                        <span class="label">Costo:</span>
+                        <span class="valor">$800.00</span>
+                    </div>
+
+                    <div class="info-fila">
+                        <span class="label">Estado:</span>
+                        <span class="valor">Pendiente</span>
+                    </div>
+
+                    <p class="nota-cancelacion">Favor de cancelar cita con un día de anticipación por lo menos.</p>
+                </div>
+
+                <div class="card-reservacion-acciones">
+                    <button type="button" class="btn-cancelar-reserva">Cancelar</button>
+                    <button type="button" class="btn-confirmar-reserva">Confirmar</button>
+                </div>
+            </article>
+        </section>
+
+        <h2>Reservaciones pasadas</h2>
+        <hr>
+    </main>
+
+    <footer>
+        <div class="logo-pie">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <div class="redes">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Red Social 1</a></li>
+                <li><a href="#">Red Social 2</a></li>
+                <li><a href="#">Red Social 3</a></li>
+                <li><a href="#">Red Social 4</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
