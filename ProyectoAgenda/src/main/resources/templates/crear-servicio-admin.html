@@ -1,0 +1,205 @@
+<!--Este es el catálogo desde el lado del administrador -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>NowToday - Catálogo Administrador</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <a href="inicio-usuario.html">Now<span>Today</span></a>
+        </div>
+
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Catálogo</a></li>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">Agregar Servicio</a></li>
+                <li><a href="">Reservaciones</a></li>
+                <li><a href="">Métricas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Crear Servicio</h1>
+        <hr>
+
+        <!-- Sección superior -->
+        <section class="editar-servicio-header">
+            <div class="editar-img-col">
+                <!-- Imagen por defecto -->
+                <img src="../static/imgs/entrada-spa.png" alt="Subir imagen del servicio">
+                <button type="button" class="btn-cambiar-img">
+                    <img src="../static/imgs/icono-lapiz.png" alt="Editar" class="icon-edit"> Subir imagen
+                </button>
+            </div>
+
+            <div class="editar-info-col">
+                <div class="campo-editable-header">
+                    <input type="text" class="input-crear" placeholder="Nombre del servicio...">
+                </div>
+
+                <div class="campo-editable-desc">
+                    <textarea class="textarea-crear" placeholder="Escribe aquí la descripción del servicio..."></textarea>
+                </div>
+
+                <div class="campo-editable-inline">
+                    <strong>Costo</strong>
+                    <input type="text" class="input-crear" placeholder="$ 0.00">
+                </div>
+
+                <div class="campo-editable-inline">
+                    <strong>Duración</strong>
+                    <input type="text" class="input-crear" placeholder="Ej. 1 hr 30 min">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion inferior -->
+        <section class="editar-horarios-container">
+
+            <!-- Horarios -->
+            <div class="col-horario">
+                <h3>Definir horarios</h3>
+
+                <div class="calendar-card">
+                    <div class="calendar-header">
+                        <button type="button">&lt;</button>
+                        <select><option>Oct</option></select>
+                        <select><option>2026</option></select>
+                        <button type="button">&gt;</button>
+                    </div>
+                    <table class="calendar-table">
+                        <thead>
+                        <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                        <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+                        <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+                        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+                        <tr><td>28</td><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-horarios">
+                    <div class="input-pill-group">
+                        <label>Días:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="Ej. Lu - Vi">
+                        </div>
+                    </div>
+
+                    <div class="input-pill-group">
+                        <label>De:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="00:00">
+                        </div>
+                    </div>
+
+                    <div class="input-pill-group">
+                        <label>Hasta:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="00:00">
+                        </div>
+                    </div>
+
+                    <div class="input-pill-group">
+                        <label>Intervalo:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="Ej. 1 hr 30 min">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloquear fechas -->
+            <div class="col-horario">
+                <h3>✖ Bloquear fechas/rangos</h3>
+
+                <div class="calendar-card">
+                    <div class="calendar-header">
+                        <button type="button">&lt;</button>
+                        <select><option>Oct</option></select>
+                        <select><option>2026</option></select>
+                        <button type="button">&gt;</button>
+                    </div>
+                    <table class="calendar-table">
+                        <thead>
+                        <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                        <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+                        <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+                        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+                        <tr><td>28</td><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-horarios">
+                    <div class="input-pill-group">
+                        <label>De:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="00:00">
+                        </div>
+                    </div>
+
+                    <div class="input-pill-group">
+                        <label>Hasta:</label>
+                        <div class="pill-wrapper">
+                            <input type="text" placeholder="00:00">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="col-acciones">
+                <button type="submit" class="btn-guardar">CREAR</button>
+                <a href="catalogo-usuario.html" class="btn-cancelar">CANCELAR</a>
+            </div>
+        </section>
+
+        <section class="banner">
+            <p>Agenda tu cita hoy.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-pie">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <div class="redes">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Red Social 1</a></li>
+                <li><a href="#">Red Social 2</a></li>
+                <li><a href="#">Red Social 3</a></li>
+                <li><a href="#">Red Social 4</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -487,8 +487,8 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* --- Editar Servicio Admin --- */
-/* --- Sección Superior --- */
+/* --- Editar servicio admin --- */
+/* --- Sección superior --- */
 .editar-servicio-header {
     display: grid;
     grid-template-columns: 420px 1fr;
@@ -734,6 +734,33 @@ footer {
     text-align: center;
     text-decoration: none;
 }
+
+/* Crear servicio*/
+.input-crear {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.textarea-crear {
+    width: 100%;
+    height: 100px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.pill-wrapper input:not([readonly]) {
+    background-color: #f0f0f0;
+    cursor: text;
+}
+
 
 @media (max-width: 768px) {
     .header {
