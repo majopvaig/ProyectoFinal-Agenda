@@ -1,0 +1,138 @@
+
+/* header: logo y navegacion */
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #DBDBDB;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo a{
+    font-size: 18px;
+    color: #3D3B30;
+    text-decoration: none;
+}
+
+.logo span {
+    background-color: #E7E247;
+    padding: 2px 8px;
+    margin-left: 4px;
+    border-radius: 2px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #3D3B30;
+    font-size: 16px;
+    padding-bottom: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #E7E247;
+}
+
+/* footer y redes */
+
+.footer {
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 25px 0;
+    border-top: 2px solid #DBDBDB;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+.footer-logo a {
+    font-size: 26px;
+    font-weight: normal;
+    color: #3D3B30;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-logo a span {
+    background-color: #E7E247; /* Amarillo / oliva */
+    color: #3D3B30;
+    padding: 2px 10px;
+    margin-left: 5px;
+}
+
+/* social */
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-social p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3D3B30;
+    margin: 0;
+}
+
+/* iconos/colores */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons .icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.social-icons .icon:hover {
+    opacity: 0.8;
+}
+
+
+.icon-yellow {
+    background-color: #E7E247;
+}
+
+.icon-black {
+    background-color: #3D3B30;
+}
+
+.icon-blue {
+    background-color: #5C80BC;
+}
+
+.icon-green {
+    background-color: #2A9D8F;
+}
+
+

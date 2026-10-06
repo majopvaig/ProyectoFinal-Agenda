@@ -2,25 +2,34 @@
     <html lang="en">
         <head>
             <meta charset="UTF-8">
-            <title>Title</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- <link rel="stylesheet" href="/static/css/styles.css"> -->
+            <link rel="stylesheet" href="/static/css/main.css">
+            <link rel="stylesheet" href="/static/css/componentes.css">
+            <link rel="stylesheet" href="/static/css/agenda.css">
+            <title>Now Today - Agenda</title>
         </head>
     <body>
 
         <header class="header">
-            <div class="logo">
-                <a href=".../static/imgs/entrada-spa.png">Now<span>Today</span></a>
+            <div class="header-content">
+                <div class="logo">
+                    <a href=".../static/imgs/entrada-spa.png">Now<span>Today</span></a>
+                </div>
+
+                <nav class="nav">
+                    <!-- Cambiar al header pertinente o con el componente web-->
+                    <ul>
+                        <li><a href="inicio-usuario.html">Inicio</a></li>
+                        <li><a href="catalogo-usuario.html">Catálogo</a></li>
+                        <li><a href="reservas-usuario.html">Agenda</a></li>
+                        <li><a href="agenda-usuario.html">Agregar servicio</a></li>
+                        <li><a href="perfil.html">Reservaciones</a></li>
+                        <li><a href="perfil.html">Metricas</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <nav>
-                <!-- Cambiar al header pertinente o con el componente web-->
-                <ul>
-                    <li><a href="inicio-usuario.html">Inicio</a></li>
-                    <li><a href="catalogo-usuario.html">Catálogo</a></li>
-                    <li><a href="reservas-usuario.html">Reservas</a></li>
-                    <li><a href="agenda-usuario.html">Agenda</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main class="agenda-main">
@@ -46,6 +55,7 @@
                         </div>
                     </div>
 
+                    <!-- Corregir fechas -->
                     <div class="filtros-inferiores">
                         <div class="vistas-fecha">
                             <span class="vista-activa">Día</span>
@@ -123,6 +133,26 @@
                 </div>
             </div>
         </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                <div class="footer-logo">
+                    <a href="#">Now<span>Today</span></a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" class="icon icon-yellow"></a>
+                        <a href="#" class="icon icon-black"></a>
+                        <a href="#" class="icon icon-blue"></a>
+                        <a href="#" class="icon icon-green"></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 
     </body>
 </html>
