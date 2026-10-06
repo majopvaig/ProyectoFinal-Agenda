@@ -1,0 +1,499 @@
+@import url('https://googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    según yo estaba importando la fuente 'Karla' pero no jaló, por eso se ve en Arial (creO)
+    aún así si alguien halla la forma de importar la fuente tdbn
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    */
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FFF;
+    margin: 0 auto;
+    width: 1440px;
+    height: 69px;
+}
+
+.logo a, .logo-pie a {
+    font-size: 22px;
+    color: #333;
+}
+
+.logo span, .logo-pie span {
+    background-color: #e3e835;
+    padding: 2px 8px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav a {
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #e3e835;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); /* Hace que el hero ocupe el ancho completo */
+    height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    padding: 0 10%;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.hero-content a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #e0e0e0;
+}
+
+.entrada-catalogo {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.entrada-catalogo h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.entrada-catalogo a {
+    display: inline-block;
+    background-color: #e3e835;
+    color: #333;
+    padding: 15px 40px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    border: 1px solid #d1d62c;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eaeaea;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servicios-populares {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.servicios-populares h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.grid-servicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-servicio {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-servicio img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+main > h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.categoria-servicio {
+    margin-bottom: 50px;
+}
+
+.categoria {
+    background-color: #4a463b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.categoria h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.grid-consulta-servicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-servicio {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tarjeta-contenido p:nth-of-type(1) {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tarjeta-contenido p:nth-of-type(2) {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contenido a {
+    display: inline-block;
+    background-color: #26a599;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.tarjeta-contenido a:hover {
+    background-color: #1e877c;
+}
+
+
+@media (min-width: 768px) {
+    main:has(.img-servicio) {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 30px;
+        grid-template-areas:
+            "titulo titulo"
+            "imagen detalles"
+            "desc calendario"
+            "banner banner";
+        align-items: start;
+    }
+    
+    main:has(.img-servicio) > h1 {
+        grid-area: titulo;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .img-servicio { grid-area: imagen; }
+    .detalles-servicio { grid-area: detalles; }
+    .descripcion-servicio { grid-area: desc; }
+    .calendario-agendar { grid-area: calendario; }
+    main:has(.img-servicio) > .banner { grid-area: banner; }
+}
+
+.img-servicio img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.detalles-servicio, .calendario-agendar {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+}
+
+.detalles-servicio h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalles-servicio h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #222;
+}
+
+.detalles-servicio small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.descripcion-servicio {
+    padding: 20px 0;
+}
+
+.descripcion-servicio h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descripcion-servicio p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.descripcion-servicio ul {
+    float: left;
+    width: 45%;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.descripcion-servicio ul li {
+    margin-bottom: 10px;
+}
+
+.descripcion-servicio img {
+    float: right;
+    width: 50%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.descripcion-servicio::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.calendario-agendar {
+    text-align: center;
+}
+
+.calendario-agendar input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.banner {
+    background-color: #4a463b;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin: 40px auto 20px auto;
+    width: 100%;
+}
+
+.banner p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #f0f0f0;
+}
+
+.logo-pie a {
+    font-size: 28px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+}
+
+.redes ul {
+    display: flex;
+    gap: 10px;
+}
+
+.redes ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    color: transparent; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.beneficios {
+    border-radius: 12px;
+    border: 1px solid rgba(105, 105, 105, 0.50);
+    background: var(--Color-4, #F0F0F0);
+    width: 541px;
+    height: 234px;
+    box-sizing: border-box;
+}
+
+.redes ul li:nth-child(1) a { background-color: #e3e835; }
+.redes ul li:nth-child(2) a { background-color: #4a463b; }
+.redes ul li:nth-child(3) a { background-color: #4f7ecf; }
+.redes ul li:nth-child(4) a { background-color: #26a599; }
+
+@media (max-width: 768px) {
+    .header, footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .redes {
+        flex-direction: column;
+    }
+    main:has(.img-servicio) {
+        display: block;
+    }
+    .descripcion-servicio ul, .descripcion-servicio img {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
