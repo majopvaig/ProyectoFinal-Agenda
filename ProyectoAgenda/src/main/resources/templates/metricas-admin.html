@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Now Today - Inicio Administrador</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <a href="inicio-admin.html">Now<span>Today</span></a>
+        </div>
+
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Catálogo</a></li>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">Agregar Servicio</a></li>
+                <li><a href="">Reservaciones</a></li>
+                <li><a href="">Métricas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Métricas</h1>
+        <hr>
+
+        <!-- Rango fecha -->
+        <section class="filtro-fecha-container">
+            <label for="rango-fecha">Rango de fecha:</label>
+            <div class="input-fecha-wrapper">
+                <input type="text" id="rango-fecha" class="input-fecha">
+                <img src="../static/imgs/calendario-icono.png" alt="Calendario" class="icon-calendar">
+            </div>
+        </section>
+
+        <!-- Tarjetas de metricas -->
+        <section class="tarjetas-metricas-grid">
+            <article class="tarjeta-metrica">
+                <h3>Ocupación Total</h3>
+                <p class="metrica-numero">80%</p>
+            </article>
+
+            <article class="tarjeta-metrica">
+                <h3>Cancelaciones</h3>
+                <p class="metrica-numero">10%</p>
+            </article>
+
+            <article class="tarjeta-metrica">
+                <h3>Servicios Populares</h3>
+                <ol class="lista-populares">
+                    <li>1. Masaje Facial: 93.33%</li>
+                    <li>2. Masaje Sueco: 80%</li>
+                    <li>3. Agua Termal: 70%</li>
+                </ol>
+            </article>
+        </section>
+
+        <h2>Ocupación por Servicio</h2>
+        <hr>
+
+        <!-- Tabla de porcentaje de ocupacion -->
+        <section class="tabla-metricas-container">
+            <table class="tabla-metricas">
+                <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Capacidad</th>
+                    <th>Reservado</th>
+                    <th>Ocupación</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Masaje Facial</td>
+                    <td>15</td>
+                    <td>14</td>
+                    <td>93.33%</td>
+                </tr>
+                <tr>
+                    <td>Masaje Sueco</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Agua Termal</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Antiedad</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Limpieza profunda</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>50%</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    </body>
+
+    <footer>
+        <div class="logo-pie">
+            <a href="#">Now<span>Today</span></a>
+        </div>
+
+        <div class="redes">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Red Social 1</a></li>
+                <li><a href="#">Red Social 2</a></li>
+                <li><a href="#">Red Social 3</a></li>
+                <li><a href="#">Red Social 4</a></li>
+            </ul>
+        </div>
+    </footer>
+</html>
