@@ -1,59 +1,193 @@
 <!DOCTYPE html>
-<html lang="es">
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/componentes.css">
+        <link rel="stylesheet" href="/static/css/agendar-admin.css">
+        <title>Now Today - Agendar</title>
+    </head>
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <title>Now Today - Inicio Administrador</title>
-</head>
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <a href=".../static/imgs/entrada-spa.png">Now<span>Today</span></a>
+                </div>
+                <nav class="nav">
 
-<body>
-<header class="header">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
 
-    <div class="logo">
-        <a href="inicio-admin.html">Now<span>Today</span></a>
-    </div>
+                    <label for="menu-toggle" class="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
 
-    <nav>
-        <input type="checkbox" id="menu-toggle">
+                    <ul>
+                        <li><a href="inicio-admin.html">Inicio</a></li>
+                        <li><a href="catalogo-admin.html">Catálogo</a></li>
+                        <li><a href="consultar-agenda-admin.html">Agenda</a></li>
+                        <li><a href="crear-servicio-admin.html">Agregar Servicio</a></li>
+                        <li><a href="metricas-admin.html">Métricas</a></li>
+                        <li><a href="perfil-admin.html">Perfil</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <label for="menu-toggle" class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <main class="agenda-main">
+            <div class="agenda-container">
 
-        <ul>
-            <li><a href="inicio-admin.html">Inicio</a></li>
-            <li><a href="catalogo-admin.html">Catálogo</a></li>
-            <li><a href="consultar-agenda-admin.html">Agenda</a></li>
-            <li><a href="crear-servicio-admin.html">Agregar Servicio</a></li>
-            <li><a href="metricas-admin.html">Métricas</a></li>
-            <li><a href="perfil-admin.html">Perfil</a></li>
-        </ul>
-    </nav>
+                <h1 class="agenda-titulo">Agendar</h1>
+                <hr class="agenda-divider">
 
-</header>
+                <form class="agendar-form">
+                    <div class="agendar-seccion-superior">
 
-<main>
-</main>
+                        <!-- Filtros por categoria y servicio-->
+                        <div class="agendar-filtros">
+                            <div class="control-grupo-inline">
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" name="categoria" class="select-input">
+                                    <option value="terapia-corporal">Terapia Corporal</option>
+                                </select>
+                            </div>
 
-</body>
+                            <div class="control-grupo-inline">
+                                <label for="servicio">Servicio</label>
+                                <select id="servicio" name="servicio" class="select-input">
+                                    <option value="masaje-sueco">Masaje Sueco</option>
+                                </select>
+                            </div>
+                        </div>
 
-<footer>
-    <div class="logo-pie">
-        <a href="#">Now<span>Today</span></a>
-    </div>
+                        <!-- Calendario y citas disponibles -->
+                        <div class="agendar-calendario-card">
 
-    <div class="redes">
-        <h4>Redes Sociales</h4>
-        <ul>
-            <li><a href="#">Red Social 1</a></li>
-            <li><a href="#">Red Social 2</a></li>
-            <li><a href="#">Red Social 3</a></li>
-            <li><a href="#">Red Social 4</a></li>
-        </ul>
-    </div>
-</footer>
+                            <!-- Calendario -->
+                            <div class="calendario-widget">
+                                <div class="cal-header">
+                                    <button type="button" class="cal-nav-btn">&lt;</button>
+                                    <div class="cal-selects">
+                                        <select name="mes" class="cal-select">
+                                            <option value="09">Sep</option>
+                                        </select>
+                                        <select name="anio" class="cal-select">
+                                            <option value="2026">2026</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="cal-nav-btn">&gt;</button>
+                                </div>
+
+                                <div class="cal-dias-semana">
+                                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                </div>
+
+                                <div class="cal-grid">
+                                    <button type="button" class="cal-dia">1</button>
+                                    <button type="button" class="cal-dia">2</button>
+                                    <button type="button" class="cal-dia">3</button>
+                                    <button type="button" class="cal-dia">4</button>
+                                    <button type="button" class="cal-dia">5</button>
+                                    <button type="button" class="cal-dia">6</button>
+                                    <button type="button" class="cal-dia">7</button>
+                                    <button type="button" class="cal-dia">8</button>
+                                    <button type="button" class="cal-dia">9</button>
+                                    <button type="button" class="cal-dia">10</button>
+                                    <button type="button" class="cal-dia">11</button>
+                                    <button type="button" class="cal-dia">12</button>
+                                    <button type="button" class="cal-dia">13</button>
+                                    <button type="button" class="cal-dia">14</button>
+                                    <button type="button" class="cal-dia">15</button>
+                                    <button type="button" class="cal-dia">16</button>
+                                    <button type="button" class="cal-dia">17</button>
+                                    <button type="button" class="cal-dia">18</button>
+                                    <button type="button" class="cal-dia">19</button>
+                                    <button type="button" class="cal-dia">20</button>
+                                    <button type="button" class="cal-dia">21</button>
+                                    <button type="button" class="cal-dia">22</button>
+                                    <button type="button" class="cal-dia">23</button>
+                                    <button type="button" class="cal-dia">24</button>
+                                    <button type="button" class="cal-dia">25</button>
+                                    <button type="button" class="cal-dia">26</button>
+                                    <button type="button" class="cal-dia">27</button>
+                                    <button type="button" class="cal-dia">28</button>
+                                    <button type="button" class="cal-dia">29</button>
+                                    <button type="button" class="cal-dia seleccionado">30</button>
+                                    <button type="button" class="cal-dia otro-mes">1</button>
+                                    <button type="button" class="cal-dia otro-mes">2</button>
+                                    <button type="button" class="cal-dia otro-mes">3</button>
+                                    <button type="button" class="cal-dia otro-mes">4</button>
+                                </div>
+                            </div>
+
+                            <!-- Citas disponibles -->
+                            <div class="citas-disponibles-widget">
+                                <h3 class="citas-titulo">Citas disponibles</h3>
+                                <p class="citas-fecha">30 Sep</p>
+                                <div class="citas-horas">
+                                    <button type="button" class="btn-hora">9:30 a.m.</button>
+                                    <button type="button" class="btn-hora">11:30 a.m.</button>
+                                    <button type="button" class="btn-hora">1:30 p.m.</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Datos del cliente -->
+                    <div class="agendar-datos-cliente">
+                        <div class="form-grupo-fila">
+                            <label>Nombre del cliente</label>
+                            <input type="text" class="input-texto" placeholder="Ej. Martha García">
+                        </div>
+
+                        <div class="form-grupo-fila">
+                            <label>Número de teléfono</label>
+                            <input type="tel" class="input-texto" placeholder="Ej. 1122334455">
+                        </div>
+
+                        <div class="form-grupo-fila">
+                            <label>Correo</label>
+                            <input type="email" class="input-texto" placeholder="Ej. cliente@correo.com">
+                        </div>
+
+                        <div class="form-grupo-fila">
+                            <label>Detalle</label>
+                            <input type="text" class="input-texto" placeholder="Ej. Ninguno">
+                        </div>
+                    </div>
+
+                    <!-- Botones de acción -->
+                    <div class="agendar-acciones">
+                        <button type="submit" class="btn-agendar">Agendar</button>
+                        <button type="button" class="btn-cancelar">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                <div class="footer-logo">
+                    <a href="#">Now<span>Today</span></a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" class="icon icon-yellow"></a>
+                        <a href="#" class="icon icon-black"></a>
+                        <a href="#" class="icon icon-blue"></a>
+                        <a href="#" class="icon icon-green"></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
 </html>
