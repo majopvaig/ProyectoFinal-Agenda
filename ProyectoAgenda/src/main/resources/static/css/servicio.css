@@ -1,0 +1,128 @@
+.img-servicio img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.detalles-servicio, .calendario-agendar {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+}
+
+.detalles-servicio h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalles-servicio h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #222;
+}
+
+.detalles-servicio small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.descripcion-servicio {
+    padding: 20px 0;
+}
+
+.descripcion-servicio h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descripcion-servicio p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.descripcion-servicio ul {
+    float: left;
+    width: 45%;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.descripcion-servicio ul li {
+    margin-bottom: 10px;
+}
+
+.descripcion-servicio img {
+    float: right;
+    width: 50%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.descripcion-servicio::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.calendario-agendar {
+    text-align: center;
+}
+
+.calendario-agendar input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    main:has(.img-servicio) {
+        display: block;
+    }
+    
+    .descripcion-servicio ul, .descripcion-servicio img {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    main:has(.img-servicio) {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 30px;
+        grid-template-areas:
+            "titulo titulo"
+            "imagen detalles"
+            "desc calendario"
+            "banner banner";
+        align-items: start;
+    }
+
+    main:has(.img-servicio) > h1 {
+        grid-area: titulo;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .img-servicio { grid-area: imagen; }
+    .detalles-servicio { grid-area: detalles; }
+    .descripcion-servicio { grid-area: desc; }
+    .calendario-agendar { grid-area: calendario; }
+    main:has(.img-servicio) > .banner { grid-area: banner; }
+}

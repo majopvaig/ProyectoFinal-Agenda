@@ -1,0 +1,86 @@
+
+.entrada-catalogo {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.entrada-catalogo h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.categoria-servicio {
+    margin-bottom: 50px;
+}
+
+.categoria {
+    background-color: #4a463b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.categoria h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.grid-consulta-servicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-servicio {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #CDCDCD;
+}
+
+.card-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tarjeta-contenido p:nth-of-type(1) {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tarjeta-contenido p:nth-of-type(2) {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.tarjeta-contenido a {
+    display: inline-block;
+    background-color: #26a599;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.tarjeta-contenido a:hover {
+    background-color: #1e877c;
+}
